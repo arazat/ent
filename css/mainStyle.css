@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+
+
+body{
+	width: 100%;
+	height: 100%;
+	
+	margin: 0 auto;
+	background-color: #3F354A;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main{
+	margin: 0 0 200px 0;
+}
+.courses {
+
+	
+	margin: 200px 0 0 0   ;
+
+	display: flex;
+	flex-direction: row;
+
+}
+.course a{
+	display: block;
+}	
+.course {
+	transition-duration: 0.5s;
+	height: 220px;
+	width: 270px;
+
+	border-radius: 7%;
+
+	text-align: center;
+
+	background-color: #DABDFE;
+	box-shadow: 0 0 20px #560322;
+}
+.course{
+	margin: 0 20px 0 0 ;
+}
+.title__course {
+	margin: 65px 0 0 0 ;
+	font-size: 24px;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+	color: #13005B;
+}
+.author {
+	font-family: 'Josefin Sans', sans-serif ;
+	font-weight:  lighter;
+	font-size: 20px;
+	margin: 10px 0 0 0 ;
+}
+
+.course:hover{
+	box-shadow: 0 0 20px #560322;
+	background-color: #E6D497;
+}
+
+
+footer{
+	font-family: 'Josefin Sans', sans-serif ;
+	color: #D3C7FB;
+	padding: 0 0 25px 0;
+
+}
+
+
+/* test ui */
+
+
+.corse{
+		border: 1px solid #D3C7FB ;
+		background-color: #3F354A;
+	}
+
+
+	.course:hover{
+
+		border: 0.2px solid #D3C7FB ;
+		background-color: #3F354A ;
+
+		color: wheat;
+
+	}
+	.course:hover .title__course{
+		color: #D3C7FB;
+	}
+/*  */
+/* мета теги , адаптация сайта 600px*/
+@media(max-device-width: 740px){ 
+	
+	.courses {	
+	margin: 50px 0 0 0   ;
+
+	display: flex;
+	flex-direction: column;
+
+	}
+	.course {
+	height: 260px;
+	width: 310px;
+	margin:10px ;
+	}
+
+	.title__course {
+		margin: 100px 0 0 0 ;
+		font-size: 24px;
+		
+	}
+
+	main{
+		margin: 0 0 100px 0;
+	}
+	footer{
+		font-size: 16px;
+		padding: 0 0 20px 0 ;
+	}
+}
+
+@media (max-device-width: 520px){
+	.corse{
+		border: 1px solid #D3C7FB ;
+		background-color: #3F354A;
+	}
+
+
+	.course:hover{
+
+		border: 0.2px solid #D3C7FB ;
+		background-color: #3F354A ;
+
+		color: wheat;
+
+	}
+	.course:hover .title__course{
+		color: #D3C7FB;
+	}
+}
+
+
+
+@media(max-device-width: 450px){ 
+	.courses {
+	margin: 50px 0 0 0   ;
+	}
+	.course {
+		height: 230px;
+		width: 280px;
+
+	}
+	
+	.title__course {
+		margin: 90px 0 0 0 ;	
+	}
+	footer{
+		padding: 0 0 0px 0 ;
+	}
+	main{
+		margin: 0 0 100px  0;
+	}
+
+
+}
+
+@media(max-device-width: 400px){ 
+	
+	.course {
+		height: 315px;
+		width: 380px;
+
+	}
+	.title__course {
+		margin: 120px 0 0 0 ;
+		font-size: 30px;
+		
+	}
+	.author {
+		font-size: 24px;
+		margin: 15px 0 0 0 ;
+	}
+	.history{
+		margin: 0;
+		padding: 0;
+	}
+
+
+}
+
+
+/* ............... 
